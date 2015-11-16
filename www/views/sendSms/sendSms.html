@@ -7,11 +7,33 @@
         <input type="text" placeholder="Number" ng-model="user.fname">
       </label>
       <label class="item item-input item-floating-label">
-        <span class="input-label">how many messages do you want to send in a series</span>
+        <span class="input-label">how many messages you want to send in series</span>
         <input type="text" placeholder="Series count" ng-model="user.lname">
       </label>
-     
+      <label class="item item-input item-floating-label">
+        <span class="input-label">SMS Text</span>
+        <textarea type="text" placeholder="SMS Text"></textarea>
+      </label>
+
+      <li class="item item-checkbox">
+        <label class="checkbox">
+          <input type="checkbox" ng-model="statrSendingAfter">
+        </label>
+        Start sending after
+      </li>
+
+      <span ng-if="statrSendingAfter">timer</span>
+
+      <button class="button button-full button-balanced"> Done </button>
+
     </div>
+
+
+
+
+
+
+
 
 
 
