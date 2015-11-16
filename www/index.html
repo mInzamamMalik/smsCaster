@@ -16,6 +16,7 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
@@ -25,11 +26,15 @@
   </head>
   <body ng-app="starter">
 
-    <ion-pane>
-      <ion-nav-bar>
-        <ion-nav-back-button>back</ion-nav-back-button>
-      </ion-nav-bar>
-      <ion-nav-view></ion-nav-view>
-    </ion-pane>
+  <ion-nav-bar class="bar bar-balanced">
+    <ion-nav-back-button class="button-clear">
+      <i class="icon ion-ios-arrow-left"></i>
+
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-nav-view>
+
+  </ion-nav-view>
+
   </body>
 </html>
