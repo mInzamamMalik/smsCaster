@@ -38,6 +38,9 @@
     "installed_plugins": {
         "com.cordova.plugins.sms": {
             "PACKAGE_NAME": "com.ionicframework.smscaster505562"
+        },
+      "cordova-plugin-x-toast": {
+        "PACKAGE_NAME": "com.ionicframework.smscaster505562"
         }
     },
     "dependent_plugins": {}

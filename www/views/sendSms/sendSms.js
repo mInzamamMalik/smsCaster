@@ -18,7 +18,7 @@ angular.module("starter")
     .send($scope.data.mobileNumber, $scope.data.text , options)
     .then(function() {
           console.log("// Success! SMS was sent");
-        
+
           $scope.data.mobileNumber++;
           if ($scope.data.count) {
 
