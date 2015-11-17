@@ -14,6 +14,8 @@ E:\WebstormProjects\ionic\smsCaster\platforms\android\bin\classes\io\ionic\keybo
 E:\WebstormProjects\ionic\smsCaster\platforms\android\bin\classes\io\ionic\keyboard\IonicKeyboard$3$1.class \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\bin\classes\io\ionic\keyboard\IonicKeyboard$3.class \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\bin\classes\io\ionic\keyboard\IonicKeyboard.class \
+E:\WebstormProjects\ionic\smsCaster\platforms\android\bin\classes\nl\xservices\plugins\Toast$1.class \
+E:\WebstormProjects\ionic\smsCaster\platforms\android\bin\classes\nl\xservices\plugins\Toast.class \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\bin\classes\org\apache\cordova\device\Device.class \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\bin\classes\org\apache\cordova\splashscreen\SplashScreen$1.class \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\bin\classes\org\apache\cordova\splashscreen\SplashScreen$2.class \

@@ -59,6 +59,7 @@ E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\cordova-js-src\
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\css\style.css \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\img\ionic.png \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\js\app.js \
+E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\js\service.js \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\lib\angular \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\lib\angular-animate \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\lib\angular-sanitize \
@@ -184,6 +185,7 @@ E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-splashscreen \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-statusbar \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-whitelist \
+E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-x-toast \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\ionic-plugin-keyboard \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\com.cordova.plugins.sms\www \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\com.cordova.plugins.sms\www\sms.js \
@@ -197,6 +199,10 @@ E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-statusbar\www \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-statusbar\www\statusbar.js \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-whitelist\whitelist.js \
+E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-x-toast\test \
+E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-x-toast\www \
+E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-x-toast\test\tests.js \
+E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\cordova-plugin-x-toast\www\Toast.js \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\ionic-plugin-keyboard\www \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\ionic-plugin-keyboard\www\android \
 E:\WebstormProjects\ionic\smsCaster\platforms\android\assets\www\plugins\ionic-plugin-keyboard\www\android\keyboard.js \
