@@ -1,5 +1,5 @@
 angular.module("starter")
-  .controller("sendSmsController", function ($scope, $cordovaSms) {
+  .controller("sendSmsController", function ($scope, $cordovaSms, dataService) {
 
     $scope.data = {};
     var options = {
@@ -12,12 +12,12 @@ angular.module("starter")
 
     $scope.send = function(){
       $scope.data.count--;
-
-
       $cordovaSms
-    .send($scope.data.mobileNumber, $scope.data.text , options)
-    .then(function() {
+        .send($scope.data.mobileNumber, $scope.data.text, options)
+        .then(function () {
           console.log("// Success! SMS was sent");
+
+          dataService.toast("Success! SMS was sent remaining: " + $scope.data.count, "short", "bottom");
 
           $scope.data.mobileNumber++;
           if ($scope.data.count) {
@@ -25,9 +25,11 @@ angular.module("starter")
             $scope.send();
 
           }
-    }, function(error) {
+        }, function (error) {
           console.log("// An error occurred");
-      // An error occurred
+          dataService.toast("Massage sending failed", "short", "bottom");
+
+          // An error occurred
           $scope.data.mobileNumber++;
           if ($scope.data.count) {
 
@@ -35,6 +37,6 @@ angular.module("starter")
 
           }
         });
-}
+    }
 
 });
