@@ -1,14 +1,20 @@
 angular.module("starter")
-  .controller("sendSmsController", function ($scope, $cordovaSms,$cordovaToast, dataService) {
+  .controller("sendSmsController", function ($scope, $cordovaSms, $cordovaToast, dataService) {
 
     $scope.data = {};
     $scope.isBreak = false;
+    $scope.sending = false;
+
 
 
 
     $scope.send = function(){
 
-      if($scope.isBreak){
+      $scope.sending = true;
+
+
+      if ($scope.isBreak) {
+        $scope.sending = false;
         return;
       }
 
@@ -34,6 +40,8 @@ angular.module("starter")
 
             $scope.send();
 
+          }else{
+            $scope.sending = false;
           }
         }, function (error) {
           console.log("// An error occurred");
@@ -45,17 +53,19 @@ angular.module("starter")
 
             $scope.send();
 
+          }else{
+            $scope.sending = false;
           }
         });
     };
 
 
-    $scope.stopSending = function(){
+    $scope.stopSending = function () {
       $scope.isBreak = true;
       console.log("stop attempted");
-      setTimeout(function(){
+      setTimeout(function () {
         $scope.isBreak = false;
-      },3000);
+      }, 500);
 
     }
 

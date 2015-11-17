@@ -32,13 +32,10 @@
           </div>
         </div>
 
-        <button type="submit" class="button button-block button-balanced"> Done</button>
+        <button ng-if="!sending" type="submit" class="button button-block button-balanced"> Done</button>
       </div>
     </form>
 
-    <div align="center">
-      <br/>
-      <button class="button button-assertive" ng-click="stopSending()"> Stop Sending</button>
-    </div>
+    <button ng-if="sending" class="button button-block button-assertive" ng-click="stopSending()"> Stop Sending</button>
   </ion-content>
 </ion-view>

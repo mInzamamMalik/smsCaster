@@ -3,12 +3,18 @@ angular.module("starter")
 
     $scope.data = {};
     $scope.isBreak = false;
+    $scope.sending = false;
+
 
 
 
     $scope.send = function(){
 
+      $scope.sending = true;
+
+
       if ($scope.isBreak) {
+        $scope.sending = false;
         return;
       }
 
@@ -34,6 +40,8 @@ angular.module("starter")
 
             $scope.send();
 
+          } else {
+            $scope.sending = false;
           }
         }, function (error) {
           console.log("// An error occurred");
@@ -45,6 +53,8 @@ angular.module("starter")
 
             $scope.send();
 
+          } else {
+            $scope.sending = false;
           }
         });
     };
@@ -55,7 +65,7 @@ angular.module("starter")
       console.log("stop attempted");
       setTimeout(function () {
         $scope.isBreak = false;
-      }, 3000);
+      }, 500);
 
     }
 
