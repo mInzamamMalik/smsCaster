@@ -1,17 +1,21 @@
 angular.module("starter")
-  .controller("sendSmsController",function($scope,$cordovaSMS){
+  .controller("sendSmsController",function($scope/*,$cordovaSMS*/){
 
-$scope.send = function(){
+    $scope.data = {};
 
-  $scope.data = {};
+    $scope.send = function(){
 
-  $cordovaSms
+      for(var i=0; i < $scope.data.count; i++){
+
+        console.log($scope.data.number++);
+      }
+    /*$cordovaSms
     .send($scope.data.mobileNumber, $scope.data.text , options)
     .then(function() {
       // Success! SMS was sent
     }, function(error) {
       // An error occurred
-    });
+    });*/
 }
 
 });
