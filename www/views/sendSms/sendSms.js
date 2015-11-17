@@ -7,7 +7,7 @@ angular.module("starter")
 
       for(var i=0; i < $scope.data.count; i++){
 
-        console.log($scope.data.number++);
+        console.log($scope.data.mobileNumber + i);
       }
     /*$cordovaSms
     .send($scope.data.mobileNumber, $scope.data.text , options)

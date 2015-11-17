@@ -1,62 +1,39 @@
 <ion-view title="send sms">
   <ion-content>
-
-    <div class="list">
-      <label class="item item-input item-floating-label">
-        <span class="input-label">Enter a Mobile Number</span>
-        <input type="number" placeholder="Number" ng-model="data.mobileNumber">
-      </label>
-      <label class="item item-input item-floating-label">
-        <span class="input-label">how many messages you want to send in series</span>
-        <input type="text" placeholder="Series count" ng-model="data.count">
-      </label>
-      <label class="item item-input item-floating-label">
-        <span class="input-label">SMS Text</span>
-        <textarea type="text" placeholder="SMS Text" ng-model="data.text"></textarea>
-      </label>
-
-      <li class="item item-checkbox">
-        <label class="checkbox">
-          <input type="checkbox" ng-model="statrSendingAfter">
+    <form ng-submit="send();">
+      <div class="list">
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Enter a Mobile Number</span>
+          <input ng-required="true" type="number" placeholder="Number" ng-model="data.mobileNumber">
         </label>
-        Start sending after
-      </li>
-
-      <!--<div class="row" >
-        <label class="col col-20  ">
-          <input type="number" width="20px" max="100" maxlength="2" ng-maxlength="2" placeholder="HH">
+        <label class="item item-input item-floating-label">
+          <span class="input-label">how many messages you want to send in series</span>
+          <input ng-required="true" type="number" placeholder="Series count" ng-model="data.count">
         </label>
-        <span class="col col-10">
-          :
-        </span>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">SMS Text</span>
+          <textarea placeholder="SMS Text" ng-model="data.text"></textarea>
+        </label>
 
-        <label class="col col-20 ">
-          <input type="number" width="20px" max="60" maxlength="2" placeholder="MM"/> </label>
-      </div>
--->
-      <div class="row">
-        <div class="col">
-          <input type="text" type="number" max="59" placeholder="HH">
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox" ng-model="statrSendingAfter">
+          </label>
+          Start sending after
+        </li>
+
+        <div class="row" ng-if="statrSendingAfter">
+          <div class="col">
+            <input type="number" max="59" placeholder="HH">
+          </div>
+          <div class="col-10"><h4>:</h4></div>
+          <div class="col">
+            <input type="number" max="59" placeholder="MM">
+          </div>
         </div>
-        <div class="col-10"><h4>:</h4></div>
-        <div class="col">
-          <input type="text" type="number" max="59" placeholder="MM">
-        </div>
+
+        <button type="submit" class="button button-block button-balanced"> Done</button>
       </div>
-
-      <button class="button button-block button-balanced" ng-click="send();"> Done </button>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
+    </form>
   </ion-content>
 </ion-view>
