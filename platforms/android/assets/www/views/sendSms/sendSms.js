@@ -40,7 +40,7 @@ angular.module("starter")
 
             $scope.send();
 
-          }else{
+          } else {
             $scope.sending = false;
           }
         }, function (error) {
@@ -53,7 +53,7 @@ angular.module("starter")
 
             $scope.send();
 
-          }else{
+          } else {
             $scope.sending = false;
           }
         });
