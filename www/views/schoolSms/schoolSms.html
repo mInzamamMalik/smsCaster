@@ -7,29 +7,25 @@
         <span class="input-label">SMS Text &nbsp&nbsp {{data.text.length}} /60</span>
 
         <textarea placeholder="SMS Text" ng-model="data.text" maxlength="60"></textarea>
-
       </label>
+
+      <button ng-click="getxsldata();">click</button>
+      <button ng-click="dosend()">send</button>
+
+      <div >{{ a.name | json}}</div>
+
       <table>
         <tr>
           <th>S.no</th>
           <th>name</th>
           <th>num</th>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>ali</td>
-          <td>03022004480</td>
+        <tr ng-repeat="a in rec">
+          <td ng-if="a.contactno">{{a.name}}</td>
+          <td ng-if="a.contactno">{{a.contactno}}</td>
+          <td ng-if="a.contactno">{{a.msg}}</td>
         </tr>
-<tr>
-          <td>1</td>
-          <td>ali</td>
-          <td>03022004480</td>
-        </tr>
-<tr>
-          <td>1</td>
-          <td>ali</td>
-          <td>03022004480</td>
-        </tr>
+
 
       </table>
 
