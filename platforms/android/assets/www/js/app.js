@@ -35,5 +35,11 @@ angular.module('starter', ['ionic',"ngCordova"])
         controller : "sendSmsController"
 
       })
+      .state("schoolSms",{
+        url : "/schoolSms",
+        templateUrl : "views/schoolSms/schoolSms.html",
+        controller : "schoolSmsController"
+
+      })
 
   });

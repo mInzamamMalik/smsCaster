@@ -4,13 +4,16 @@ angular.module("starter")
     $scope.getxsldata = function ( ) {
       alasql('SELECT * FROM XLS("sms.xls",{headers:true})',[],function(data){
         $scope.rec=data;
+        $scope.$apply();
       });
     };
+
+    $scope.data = {};
 
     $scope.dosend = function(){
       console.log($scope.rec);
       for(var i=0; i < $scope.rec.length; i++ ){
-        $scope.send($scope.rec[i].contactno,"dafasdf");
+        $scope.send($scope.rec[i].contactno,$scope.data.text);
       }
 
     };
